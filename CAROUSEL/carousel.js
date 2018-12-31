@@ -1,8 +1,8 @@
-const images = ["pics/sloth01.jpg",
-                "pics/sloth02.jpg",
-                "pics/sloth03.jpg",
-                "pics/sloth04.jpg",
-                "pics/sloth05.jpg"];
+const images = ["CAROUSEL/pics/sloth01.jpg",
+                "CAROUSEL/pics/sloth02.jpg",
+                "CAROUSEL/pics/sloth03.jpg",
+                "CAROUSEL/pics/sloth04.jpg",
+                "CAROUSEL/pics/sloth05.jpg"];
 
 let imagesIndex = 1;
 let started = false;
