@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="carousel.css">
+    </head>
+    <body>
+        <div class="image-carousel-container">
+        <div class="image-carousel">
+            <div class="container-left">
+                <img src="CAROUSEL/pics/sloth01.jpg" class="image" style="left: 600;" id="leftID">
+                <div id="leftImageContainer" class="image-hide"></div>
+            </div>
+            <div class="container-image">
+                <div class="left-icon" onclick="prevImage()">
+                    <img src="CAROUSEL/icons/iconmonstr-left.svg">
+                </div>
+                <div class="image" id="visibleImage">
+                    <img src="CAROUSEL/pics/sloth02.jpg" class="image" style="left: 0" id="middleID">
+                </div>
+                <div class="play-icon">
+                    <img id="playIcon" src="CAROUSEL/icons/iconmonstr-play.svg">
+                </div>
+                <div class="right-icon" onclick="nextImage()">
+                    <img src="CAROUSEL/icons/iconmonstr-right.svg">
+                </div>
+            </div>
+            <div class="container-right">
+                <div id="rightImageContainer" class="image-hide"></div>
+                <img src="CAROUSEL/pics/sloth03.jpg" class="image" style="left: -600" id="rightID">
+            </div>
+        </div>
+        </div>
+        <script src="carousel.js"></script>
+    </body>
+</html>
