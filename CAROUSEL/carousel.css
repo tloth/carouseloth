@@ -1,0 +1,101 @@
+.image-carousel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-carousel {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.image-hide {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+
+.image {
+    position: relative;
+}
+
+.container-image,
+.container-left,
+.container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.container-image {
+    box-shadow: 0px 6px 9px -3px darkgreen;
+}
+
+.left-icon,
+.right-icon,
+.play-icon {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: lightgreen;
+    opacity: 0.5;
+}
+
+.left-icon {
+    margin-right: -60px;
+    right: -10;
+}
+
+.right-icon {
+    margin-left: -120px;
+    left: -10;
+}
+
+.play-icon {
+    left: -330px;
+    opacity: 0;
+}
+
+.play-icon img,
+.left-icon img,
+.right-icon img {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+
+.play-icon:hover,
+.left-icon:hover,
+.right-icon:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+    opacity: 1 !important;
+}
+
+.image {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .image-carousel {
+        width: 100%;
+    }
+    .container-image {
+        width: 100%;
+    }
+    #visibleImage {
+        width: 100%;
+    }
+}
