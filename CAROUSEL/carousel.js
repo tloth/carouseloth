@@ -89,7 +89,7 @@ function replaceElement() {
 
 function startCarousel() {
     started = true;
-    document.getElementById("playIcon").src = "icons/iconmonstr-pause.svg"
+    document.getElementById("playIcon").src = "CAROUSEL/icons/iconmonstr-pause.svg"
     
     playIconElement.removeEventListener("click", startCarousel);
     playIconElement.addEventListener("click", stopCarousel);
@@ -99,7 +99,7 @@ function startCarousel() {
 
 function stopCarousel() {
     started = false;
-    document.getElementById("playIcon").src = "icons/iconmonstr-play.svg";
+    document.getElementById("playIcon").src = "CAROUSEL/icons/iconmonstr-play.svg";
     playIconElement.removeEventListener("click", stopCarousel);
     playIconElement.addEventListener("click", startCarousel);
     clearInterval(interval);
